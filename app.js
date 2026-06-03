@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     title: "포항 덮밥 맛집 홍보 숏폼",
                     type: "youtube",
                     url: "https://youtube.com/shorts/M84Y7XZRWl0",
-                    thumb: "image_f5247b.jpg", 
+                    thumb: "https://media.discordapp.net/attachments/529143536625385487/1511641714002235432/20240511_1202161.jpg?ex=6a21318d&is=6a1fe00d&hm=3a8e0fba6343fd321ddb21e247bebf283577eee941db7e698b417de97ca1e7b6&=&format=webp&width=1038&height=960", 
                     baseViews: 1747
                 },
                 {
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     title: "포항 핫플 카페 드라마 촬영지 숏폼",
                     type: "youtube",
                     url: "https://youtube.com/shorts/aal8nttxdS0",
-                    thumb: "image_f52480.jpg", 
+                    thumb: "https://media.discordapp.net/attachments/529143536625385487/1511641632208851094/20260328_104552.jpg?ex=6a21317a&is=6a1fdffa&hm=a140398427982a92b08ad5824ae3755a0df8ec6009a843bac41fe6509fcda07a&=&format=webp&width=961&height=960", 
                     baseViews: 339
                 },
                 {
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     title: "Odin in Pohang 브랜드 사이트",
                     type: "web",
                     url: "https://odin-in-pohang.aiapp.link/",
-                    thumb: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600",
+                    thumb: "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250621_280%2F1750471970055KzxPT_JPEG%2F%25C1%25A4.jpg",
                     baseViews: null
                 }
             ];
@@ -133,32 +133,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             `;
         }
-
         card.innerHTML = `
-            <button class="card-delete-btn" data-id="${item.id}">삭제</button>
-            <div class="media-wrapper">
-                <img src="${item.thumb}" alt="${item.title}" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600'">
-            </div>
-            <div class="card-info">
-                <span class="tag ${tagClass}">${tagText}</span>
-                <h3>${item.title}</h3>
-                ${statsHtml}
-            </div>
-        `;
+    <div class="media-wrapper">
+        <img src="${item.thumb}" alt="${item.title}" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600'">
+    </div>
+    <div class="card-info">
+        <span class="tag ${tagClass}">${tagText}</span>
+        <h3>${item.title}</h3>
+        ${statsHtml}
+    </div>
+`;
 
-        // 카드 내 삭제 버튼 클릭 핸들러
-        const deleteBtn = card.querySelector(".card-delete-btn");
-        if (deleteBtn) {
-            deleteBtn.addEventListener("click", (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                if (confirm("이 프로젝트를 포트폴리오에서 제거할까요?")) {
-                    deleteItemFromStorage(item.id);
-                    card.remove();
-                }
-            });
-        }
-
+// 💡 아래에 있던 'const deleteBtn = ...' 부터 '} (닫는 중괄호)' 까지의 삭제 핸들러 기능은 아무것도 남기지 말고 깔끔하게 다 지우시면 됩니다!
         // 가장 최신 항목이 맨 앞으로 오도록 배치
         targetGrid.insertBefore(card, targetGrid.firstChild);
     }
