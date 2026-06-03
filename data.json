@@ -1,31 +1,20 @@
 {
   "profile": {
-    "bio": "사용자 중심의 사고로 브랜드와 사람을 연결하고, 가치 있는 경험을 디자인합니다.",
+    "bio": "클릭하여 한 줄 소개를 입력하세요.",
     "experience": [
-      "모션그래픽 및 숏폼 홍보 영상 기획/제작 (2024 - 현재)",
-      "인포그래픽 기반 홍보 포스터 및 굿즈 브랜딩 비주얼 디자인",
-      "마케팅용 웹사이트 및 서비스 홍보 랜딩페이지 UI/UX 퍼블리싱"
+      "여기에 경력 사항을 추가하세요."
     ],
-    "skills": "Premiere Pro, After Effects, Photoshop, Illustrator, Figma, HTML/CSS"
+    "skills": "여기에 보유 기술을 입력하세요."
   },
   "works": [
     {
-      "id": 1,
+      "id": 1780478336532,
       "category": "sns",
-      "title": "HERBLOOM PROJECT",
-      "desc": "BRANDING · UI/UX",
-      "link": "https://youtube.com",
-      "thumb": "https://picsum.photos/600/600?random=1",
-      "views": "2.4만회"
-    },
-    {
-      "id": 1780478091071,
-      "category": "web",
-      "title": "포항 ODIN 홍보 웹사이",
-      "desc": "Website",
-      "link": "https://odin-in-pohang.aiapp.link/",
-      "thumb": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250621_280%2F1750471970055KzxPT_JPEG%2F%25C1%25A4.jpg",
-      "views": ""
+      "title": "ㄴㅇㄴㅇ",
+      "desc": "ㄴㅇㄴㅇ",
+      "link": "sdsd",
+      "thumb": "sdsd",
+      "views": "sdsd"
     }
   ]
 }
