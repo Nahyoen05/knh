@@ -26,8 +26,8 @@
         <div class="hero-container">
             <div class="hero-text">
                 <span class="hero-tag">HELLO, I'M Nahyeon</span>
-                <h1 id="edit-title" contenteditable="true">DESIGNING EXPERIENCES,<br>DELIVERING VALUE.</h1>
-                <p id="edit-subtitle" class="hero-desc" contenteditable="true">사용자 중심의 사고로 브랜드와 사람을 연결하고, 가치 있는 경험을 디자인합니다.</p>
+                <h1 id="edit-title" contenteditable="false">DESIGNING EXPERIENCES,<br>DELIVERING VALUE.</h1>
+                <p id="edit-subtitle" class="hero-desc" contenteditable="false">사용자 중심의 사고로 브랜드와 사람을 연결하고, 가치 있는 경험을 디자인합니다.</p>
                 <div class="hero-buttons">
                     <a href="#featured-works" class="btn-dark">VIEW MY WORKS <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
@@ -48,8 +48,6 @@
                 </div>
             </div>
         </div>
-        <div class="edit-guide-banner">
-            <i class="fa-solid fa-pen-to-square"></i> 텍스트를 클릭하면 언제든 편집 및 실시간 자동 저장됩니다.
         </div>
     </header>
 
@@ -59,8 +57,8 @@
             <div class="profile-grid-wrapper">
                 <div class="profile-white-block">
                     <h3 class="block-title"><i class="fa-solid fa-briefcase"></i> SELECTED EXPERIENCE</h3>
-                    <div id="edit-exp" class="editable-area" contenteditable="true">
-                        <p>• <strong>크리에이티브 일러스트레이터 & 프로ड्यू서</strong> (Present)</p>
+                    <div id="edit-exp" class="editable-area" contenteditable="false">
+                        <p>• <strong>크리에이티브 일러스트레이터 & 프로세서</strong> (Present)</p>
                         <p>- 브랜드 맞춤형 시각 자료 및 프리미엄 인포그래픽 포스터 디자인 제작</p>
                         <p>- AI 기술을 융합한 로컬 브랜드 홍보 및 고효율 숏폼 영상 기획/편집 총괄</p>
                         <p>- 오피셜 브랜드 굿즈 패키지 브랜딩 및 실물 제품 제작 디렉팅</p>
@@ -68,7 +66,7 @@
                 </div>
                 <div class="profile-green-block">
                     <h3 class="block-title white-text"><i class="fa-solid fa-screwdriver-wrench"></i> ABOUT ME & SKILLS</h3>
-                    <div id="edit-skills" class="editable-area white-text" contenteditable="true">
+                    <div id="edit-skills" class="editable-area white-text" contenteditable="false">
                         <p>디자인을 통해 문제를 해결하고, 사람들에게 긍정적인 영향을 만드는 것을 목표로 합니다.</p>
                         <p style="margin-top:15px;">• <strong>Video & Motion:</strong> Premiere Pro, After Effects, AI Video Workflow</p>
                         <p>• <strong>Design & Branding:</strong> Illustrator, Photoshop, Package Design</p>
@@ -111,55 +109,6 @@
                     </div>
             </div>
         </section>
-
-        <section class="creator-form-section">
-            <div class="creator-form-box">
-                <div class="form-header-text">
-                    <h3><i class="fa-solid fa-folder-plus"></i> 포트폴리오 프로젝트 직접 관리</h3>
-                    <p>내용을 입력하면 상단의 알맞은 카테고리 섹션 위치로 실시간 분류되어 격자 배치됩니다.</p>
-                </div>
-                
-                <form id="portfolio-form" class="creator-form">
-                    <div class="input-row">
-                        <div class="field-group">
-                            <label for="content-title">프로젝트 제목</label>
-                            <input type="text" id="content-title" placeholder="예: 포항 덮밥 맛집 홍보 숏폼" required>
-                        </div>
-                        <div class="field-group">
-                            <label for="content-type">콘텐츠 카테고리 종류</label>
-                            <select id="content-type">
-                                <option value="youtube">🎥 AI 영상 (유튜브 쇼츠 / 일반)</option>
-                                <option value="web">🌐 AI 웹사이트 / 랜딩페이지</option>
-                                <option value="document">📄 구글 문서 / PDF / 노션 링크</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="input-row">
-                        <div class="field-group">
-                            <label for="content-url">연결할 링크 URL 주소</label>
-                            <input type="url" id="content-url" placeholder="https://youtube.com/shorts/..." required>
-                        </div>
-                        <div class="field-group" id="view-input-group">
-                            <label for="content-views">실제 유튜브 조회수 (숫자만 입력)</label>
-                            <input type="number" id="content-views" placeholder="예: 1747">
-                        </div>
-                    </div>
-
-                    <div class="input-row">
-                        <div class="field-group full-width">
-                            <label for="content-thumb">썸네일 이미지 경로 또는 URL 주소</label>
-                            <input type="text" id="content-thumb" placeholder="이미지 파일명(예: image_f5247b.jpg) 또는 웹 주소를 넣어주세요.">
-                        </div>
-                    </div>
-
-                    <div class="form-submit-wrapper">
-                        <button type="submit" class="btn-submit-project">포트폴리오 리스트에 등록하기</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
     </main>
 
     <footer class="studio-footer">
