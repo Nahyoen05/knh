@@ -8,5 +8,24 @@
     ],
     "skills": "Premiere Pro, After Effects, Photoshop, Illustrator, Figma, HTML/CSS"
   },
-  "works": []
+  "works": [
+    {
+      "id": 1,
+      "category": "sns",
+      "title": "HERBLOOM PROJECT",
+      "desc": "BRANDING · UI/UX",
+      "link": "https://youtube.com",
+      "thumb": "https://picsum.photos/600/600?random=1",
+      "views": "2.4만회"
+    },
+    {
+      "id": 1780477975574,
+      "category": "sns",
+      "title": "드라마 촬영지 실화냐🔥포항 핫플 카페",
+      "desc": "YouTube SHORTS",
+      "link": "https://www.youtube.com/shorts/aal8nttxdS0",
+      "thumb": "https://media.discordapp.net/attachments/529143536625385487/1511641632208851094/20260328_104552.jpg?ex=6a21317a&is=6a1fdffa&hm=a140398427982a92b08ad5824ae3755a0df8ec6009a843bac41fe6509fcda07a&=&format=webp&width=961&height=960",
+      "views": "339"
+    }
+  ]
 }
