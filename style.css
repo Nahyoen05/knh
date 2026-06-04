@@ -310,11 +310,30 @@ body {
     transform: translateY(-2px);
 }
 
+/* ==========================================================================
+   맨 하단 CONTACT 및 푸터 스타일 (미드나잇 딥그린 무드 완전 복구)
+   ========================================================================== */
+.contact-section {
+    scroll-margin-top: 70px;
+}
+
+.contact-section a:hover {
+    color: #fff !important;
+    border-color: #fff !important;
+    transform: translateY(-2px);
+}
+
 .studio-footer {
-    border-top: 1px solid var(--border-soft);
-    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+    padding: 40px 0 !important;
     text-align: center;
     font-size: 0.8rem;
-    color: var(--text-muted);
-    background-color: #fff;
+    background-color: #0b1a12 !important; /* 👈 엉뚱한 흰색을 빼고 미드나잇 그린으로 확실하게 복구 */
+}
+
+.studio-footer p {
+    color: #5c7565 !important; /* 👈 눈이 편안하고 고급스러운 그린 그레이 톤 텍스트 고정 */
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    margin: 0;
 }
