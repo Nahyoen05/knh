@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 내 폴더에 다운로드된 이미지 경로 매핑 (쉼표 누락 및 문법 오류 완벽 수정)
+    // 1. 포트폴리오 고정 마스터 데이터 (조회수 표시 제거 상태)
     const portfolioData = [
         // ======= [카테고리 1] AI 영상 프로젝트 =======
         {
@@ -8,16 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "이건 무조건 저장해야됨🔥포항 덮밥 맛집",
             type: "youtube",
             url: "https://www.youtube.com/shorts/M84Y7XZRWl0",
-            thumb: "thumb_food.jpg", // 👈 이 구절 끝에 쉼표(,)가 누락되어 9번째 줄 근처에서 에러가 났던 것입니다.
-            baseViews: null
+            thumb: "thumb_food.jpg"
         },
         {
             id: "video_2",
             title: "드라마 촬영지 실화냐🔥포항 핫플 카페",
             type: "youtube",
             url: "https://youtube.com/shorts/aal8nttxdS0?si=asRKJDr-lRUowmW2",
-            thumb: "thumb_cafe.jpg", 
-            baseViews: null
+            thumb: "thumb_cafe.jpg"
         },
         
         // ======= [카테고리 2] AI 웹사이트 프로젝트 =======
@@ -26,8 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "포항 ODIN 웹사이트",
             type: "web",
             url: "https://odin-in-pohang.aiapp.link/",
-            thumb: "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250621_280%2F1750471970055KzxPT_JPEG%2F%25C1%25A4.jpg",
-            baseViews: null
+            thumb: "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250621_280%2F1750471970055KzxPT_JPEG%2F%25C1%25A4.jpg"
         },
 
         // ======= [카테고리 3] 구글 문서 및 기획서 자료 =======
@@ -36,14 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "포항 러블랑 굿즈 기획서",
             type: "document",
             url: "https://docs.google.com/document/d/1DL1HlW91dxQx8y8mfFGZ9nMadtaP8nAenyTAjoaB9UQ/edit?tab=t.0",
-            thumb: "thumb_doc.jpg", 
-            baseViews: null
+            thumb: "thumb_doc.jpg"
         }
     ];
 
     setupEditableElements();
     renderPortfolioList(portfolioData);
 
+    // 2. 포트폴리오 화면 렌더링 함수
     function renderPortfolioList(items) {
         const grids = {
             youtube: document.getElementById("grid-youtube"),
@@ -69,16 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (item.type === "youtube") { tagText = "AI VIDEO"; tagClass = "video-tag"; }
             if (item.type === "web") { tagText = "AI WEBSITE"; tagClass = "web-tag"; }
 
-            let statsHtml = "";
-            if (item.type === "youtube" && item.baseViews !== null) {
-                statsHtml = `
-                    <div class="live-stats">
-                        <span><i class="fa-solid fa-eye"></i> 조회수 <strong>${item.baseViews.toLocaleString()}회</strong></span>
-                        <span><i class="fa-solid fa-heart"></i> 추천 콘텐츠</span>
-                    </div>
-                `;
-            }
-
+            // 💡 이 구역 안에 있던 하단 'live-stats'(조회수 및 아이콘) 구조를 완벽하게 들어내어 완전히 빈 상태로 고정했습니다.
             card.innerHTML = `
                 <div class="media-wrapper">
                     <img src="${item.thumb}" alt="${item.title}" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600'">
@@ -86,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="card-info">
                     <span class="tag ${tagClass}">${tagText}</span>
                     <h3>${item.title}</h3>
-                    ${statsHtml}
                 </div>
             `;
 
@@ -94,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // 3. 프로필 편집 데이터 우회 연동 함수
     function setupEditableElements() {
         const editableIds = ["edit-title", "edit-subtitle", "edit-bio", "edit-exp", "edit-skills"];
         editableIds.forEach(id => {
