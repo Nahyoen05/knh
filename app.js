@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "이건 무조건 저장해야됨🔥포항 덮밥 맛집",
             type: "youtube",
             url: "https://www.youtube.com/shorts/M84Y7XZRWl0",
-            thumb: "https://media.discordapp.net/attachments/529143536625385487/1511641714002235432/20240511_1202161.jpg?ex=6a21318d&is=6a1fe00d&hm=3a8e0fba6343fd321ddb21e247bebf283577eee941db7e698b417de97ca1e7b6&=&format=webp&width=1038&height=960", 
+            thumb: "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20191022_19%2F1571724564753N1nab_JPEG%2F73nbxauD5MvBmTZfe9bhUNVH.jpeg.jpg", 
             baseViews: 1750
         },
         {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "드라마 촬영지 실화냐🔥포항 핫플 카페",
             type: "youtube",
             url: "https://youtube.com/shorts/aal8nttxdS0?si=asRKJDr-lRUowmW2",
-            thumb: "https://media.discordapp.net/attachments/529143536625385487/1511641632208851094/20260328_104552.jpg?ex=6a21317a&is=6a1fdffa&hm=a140398427982a92b08ad5824ae3755a0df8ec6009a843bac41fe6509fcda07a&=&format=webp&width=961&height=960", 
+            thumb: "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231019_33%2F16976815039450bWqG_JPEG%2FKakaoTalk_20231019_110617488.jpg", 
             baseViews: 342
         },
         
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "포항 러블랑 굿즈 기획서",
             type: "document",
             url: "https://docs.google.com/document/d/1DL1HlW91dxQx8y8mfFGZ9nMadtaP8nAenyTAjoaB9UQ/edit?tab=t.0",
-            thumb: "https://media.discordapp.net/attachments/529143536625385487/1511700084281184397/2026-06-03_205611.png?ex=6a2167ea&is=6a20166a&hm=4e067ae0139f7a0dceedd19bed28c953072a93a50d091ed74ed96f73ef0450f6&=&format=webp&quality=lossless",
+            thumb: "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20251120_77%2F1763628521141saIN6_JPEG%2FKakaoTalk_20251120_174750399.jpg",
             baseViews: null
         }
     ];
