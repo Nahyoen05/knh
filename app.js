@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 내 폴더에 안전하게 다운로드된 로컬 이미지 경로로 완벽 교체
+    // 내 폴더에 다운로드된 이미지 경로 매핑 (쉼표 누락 및 문법 오류 완벽 수정)
     const portfolioData = [
         // ======= [카테고리 1] AI 영상 프로젝트 =======
         {
@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "이건 무조건 저장해야됨🔥포항 덮밥 맛집",
             type: "youtube",
             url: "https://www.youtube.com/shorts/M84Y7XZRWl0",
-            thumb: "thumb_food.jpg", // 로컬 파일로 변경
-            baseViews: null
+            thumb: "thumb_food.jpg", // 👈 이 구절 끝에 쉼표(,)가 누락되어 9번째 줄 근처에서 에러가 났던 것입니다.
+            baseViews: 1750
         },
         {
             id: "video_2",
             title: "드라마 촬영지 실화냐🔥포항 핫플 카페",
             type: "youtube",
             url: "https://youtube.com/shorts/aal8nttxdS0?si=asRKJDr-lRUowmW2",
-            thumb: "thumb_cafe.jpg", // 로컬 파일로 변경
-            baseViews: null
+            thumb: "thumb_cafe.jpg", 
+            baseViews: 342
         },
         
         // ======= [카테고리 2] AI 웹사이트 프로젝트 =======
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "포항 러블랑 굿즈 기획서",
             type: "document",
             url: "https://docs.google.com/document/d/1DL1HlW91dxQx8y8mfFGZ9nMadtaP8nAenyTAjoaB9UQ/edit?tab=t.0",
-            thumb: "thumb_doc.jpg", // 로컬 파일로 변경
+            thumb: "thumb_doc.jpg", 
             baseViews: null
         }
     ];

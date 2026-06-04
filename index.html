@@ -3,97 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>디지털 크리에이터 포트폴리오</title>
-    <!-- 구글 폰트 및 아이콘 에셋 로드 -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Nahyeon STUDIO | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- 💡 문제가 되던 상단 메뉴 헤더 바(<header>) 구역을 완벽히 도려냈습니다 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Nahyeon STUDIO</div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link-item active">HOME</a>
+                <a href="#about-section" class="nav-link-item">ABOUT</a>
+                <a href="#featured-works" class="nav-link-item">WORKS</a>
+                <a href="#contact-section" class="nav-link-item">CONTACT</a>
+            </div>
+        </div>
+    </nav>
 
-    <!-- 프로필 메인 배너 영역 (방문자 읽기 전용 상태 고정) -->
-    <section class="hero-section">
+    <header class="hero-section">
         <div class="hero-container">
-            <h1 id="edit-title" contenteditable="false">디지털 크리에이터 포트폴리오</h1>
-            <p id="edit-subtitle" class="subtitle" contenteditable="false">AI 활용 미디어 콘텐츠 및 브랜딩 기획</p>
-            <p id="edit-bio" class="bio" contenteditable="false">데이터와 트렌드를 기반으로 가치를 창출하는 크리에이티브 파트너입니다.</p>
-        </div>
-    </section>
-
-    <!-- ABOUT 구역 (경력 및 스킬 서술) -->
-    <section class="resume-section">
-        <div class="resume-container">
-            <div class="resume-block">
-                <h2>EXPERIENCE</h2>
-                <div id="edit-exp" class="editable-area" contenteditable="false">
-                    <p><strong>AI 콘텐츠 디렉터 / 크리에이터</strong> (2024 - 현재)</p>
-                    <ul>
-                        <li>지역 상권 활성화를 위한 AI 기반 숏폼 마케팅 콘텐츠 기획 및 제작</li>
-                        <li>로컬 브랜드 웹사이트 레이아웃 설계 및 랜딩 페이지 비주얼 디렉팅</li>
-                        <li>오프라인 상품 활성화를 위한 캐릭터 굿즈 패키지 및 브랜딩 전략 수립</li>
-                    </ul>
+            <div class="hero-text">
+                <span class="hero-tag">HELLO, I'M Nahyeon</span>
+                <h1 id="edit-title" contenteditable="false">DESIGNING EXPERIENCES,<br>DELIVERING VALUE.</h1>
+                <p id="edit-subtitle" class="hero-desc" contenteditable="false">사용자 중심의 사고로 브랜드와 사람을 연결하고, 가치 있는 경험을 디자인합니다.</p>
+                <div class="hero-buttons">
+                    <a href="#featured-works" class="btn-dark">VIEW MY WORKS <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
-            
-            <div class="resume-block">
-                <h2>SKILLS & TOOLS</h2>
-                <div id="edit-skills" class="editable-area white-text" contenteditable="false">
-                    <p>• <strong>Video Production:</strong> AI 비디오 생성 기획, 숏폼 트렌드 분석, 영상 썸네일 브랜딩</p>
-                    <p>• <strong>Web & Design:</strong> AI 활용 랜딩페이지 구조 설계, 디지털 이미지 자산 관리</p>
-                    <p>• <strong>Strategy:</strong> 굿즈 마케팅 제안서 작성, 비즈니스 컨셉 모델링, 구글 워크스페이스 기반 기획</p>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800" alt="Hero Art" class="hero-img">
+                <div class="info-badges">
+                    <div class="badge-item">
+                        <i class="fa-solid fa-user"></i>
+                        <h4>USER CENTERED</h4>
+                        <p>사용자의 니즈를 이해하고 최적의 경험을 설계합니다.</p>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h4>BRAND FOCUSED</h4>
+                        <p>브랜드의 본질을 담아 일관된 가치를 전달합니다.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- WORKS 구역 (포트폴리오 카드 갤러리 그리드) -->
-    <main class="portfolio-container">
+    <main class="main-container">
         
-        <!-- 카테고리 1: AI 영상 프로젝트 -->
-        <section class="category-block">
-            <h2 class="category-title"><i class="fa-solid fa-clapperboard"></i> AI Video Projects</h2>
-            <div class="projects-grid" id="grid-youtube">
-                <!-- app.js의 고정 데이터 카드가 생성되는 곳 -->
+        <section class="profile-layout-section" id="about-section">
+            <div class="profile-grid-wrapper">
+                <div class="profile-white-block">
+                    <h3 class="block-title"><i class="fa-solid fa-briefcase"></i> SELECTED EXPERIENCE</h3>
+                    <div id="edit-exp" class="editable-area" contenteditable="false">
+                        <p>• <strong>크리에이티브 일러스트레이터 & 프로세서</strong> (Present)</p>
+                        <p>- 브랜드 맞춤형 시각 자료 및 프리미엄 인포그래픽 포스터 디자인 제작</p>
+                        <p>- AI 기술을 융합한 로컬 브랜드 홍보 및 고효율 숏폼 영상 기획/편집 총괄</p>
+                        <p>- 오피셜 브랜드 굿즈 패키지 브랜딩 및 실물 제품 제작 디렉팅</p>
+                    </div>
+                </div>
+                <div class="profile-green-block">
+                    <h3 class="block-title white-text"><i class="fa-solid fa-screwdriver-wrench"></i> ABOUT ME & SKILLS</h3>
+                    <div id="edit-skills" class="editable-area white-text" contenteditable="false">
+                        <p>디자인을 통해 문제를 해결하고, 사람들에게 긍정적인 영향을 만드는 것을 목표로 합니다.</p>
+                        <p style="margin-top:15px;">• <strong>Video & Motion:</strong> Premiere Pro, After Effects, AI Video Workflow</p>
+                        <p>• <strong>Design & Branding:</strong> Illustrator, Photoshop, Package Design</p>
+                    </div>
+                    </div>
+            </div>
+            <div class="notion-wrapper">
+                <a href="https://www.notion.so/ee79eb1ddb1f83e0b8c281a0d7611f8c" target="_blank" class="notion-link-btn">
+                    <i class="fa-solid fa-link"></i> 상세 노션 포트폴리오 전체 보기
+                </a>
             </div>
         </section>
 
-        <!-- 카테고리 2: AI 웹사이트 프로젝트 -->
-        <section class="category-block">
-            <h2 class="category-title"><i class="fa-solid fa-globe"></i> AI Web & Landing Pages</h2>
-            <div class="projects-grid" id="grid-web">
-                <!-- app.js의 고정 데이터 카드가 생성되는 곳 -->
+        <section id="featured-works" class="works-section">
+            <div class="works-header">
+                <h2 class="works-main-title">SELECTED WORKS</h2>
+                <span class="works-sub-title">VIEW ALL +</span>
+            </div>
+
+            <div class="category-group">
+                <h3 class="category-title title-video">🎥 AI Video Projects</h3>
+                <div id="grid-youtube" class="cards-grid-layout"></div>
+            </div>
+
+            <div class="category-group">
+                <h3 class="category-title title-web">🌐 AI Web & Landing Pages</h3>
+                <div id="grid-web" class="cards-grid-layout"></div>
+            </div>
+
+            <div class="category-group">
+                <h3 class="category-title title-doc">📄 Documents & Materials</h3>
+                <div id="grid-document" class="cards-grid-layout"></div>
             </div>
         </section>
-
-        <!-- 카테고리 3: 기획서 및 자료 문서 -->
-        <section class="category-block">
-            <h2 class="category-title"><i class="fa-solid fa-file-lines"></i> Documents & Materials</h2>
-            <div class="projects-grid" id="grid-document">
-                <!-- app.js의 고정 데이터 카드가 생성되는 곳 -->
-            </div>
-        </section>
-
     </main>
 
-    <!-- 맨 하단 CONTACT 구역 (이메일 주소 포함) -->
-    <section class="contact-section" style="padding: 80px 20px; text-align: center; background-color: #11261a; color: #ffffff; border-top: 1px solid rgba(255,255,255,0.05);">
+    <section class="contact-section" id="contact-section" style="padding: 90px 20px; text-align: center; background-color: #11261a; color: #ffffff; border-top: 1px solid var(--border-soft);">
         <div style="max-width: 600px; margin: 0 auto;">
-            <span style="font-size: 11px; letter-spacing: 2px; color: #81a38a; font-weight: 600; text-transform: uppercase; display: block; margin-bottom: 5px;">Get In Touch</span>
-            <h2 style="font-size: 32px; margin-top: 0; margin-bottom: 20px; font-weight: 700; letter-spacing: 1px;">CONTACT</h2>
+            <span style="font-size: 11px; letter-spacing: 2.5px; color: #81a38a; font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 8px;">Get In Touch</span>
+            <h2 style="font-size: 34px; margin-top: 0; margin-bottom: 20px; font-weight: 700; letter-spacing: 1px;">CONTACT</h2>
             <p style="color: #c3d6cb; margin-bottom: 35px; font-size: 15px; line-height: 1.7; word-break: keep-all;">
-                비즈니스 협업 제안 및 프로젝트 관련 문의는<br>
-                아래 공식 이메일 주소로 편하게 연락 주시기 바랍니다.
+                비즈니스 협업 문의 및 프로젝트 관련 제안은<br>
+                아래 공식 이메일 주소로 언제든지 편하게 연락해 주세요.
             </p>
-            <a href="mailto:matchya030@naver.com" style="font-size: 20px; color: #ffffff; font-weight: 600; text-decoration: none; border-bottom: 2px solid #81a38a; padding-bottom: 6px; transition: all 0.3s; display: inline-block;">
+            <a href="mailto:matchya030@naver.com" style="font-size: 21px; color: #ffffff; font-weight: 600; text-decoration: none; border-bottom: 2px solid #81a38a; padding-bottom: 6px; transition: all 0.3s; display: inline-block;">
                 <i class="fa-regular fa-envelope" style="margin-right: 10px; color: #81a38a;"></i> matchya030@naver.com
             </a>
         </div>
     </section>
 
-    <footer style="padding: 30px 20px; text-align: center; background-color: #0b1a12; color: #5c7565; font-size: 13px; border-top: 1px solid rgba(255,255,255,0.05);">
-        <p>&copy; 2026 Portfolio. All Rights Reserved.</p>
+    <footer class="studio-footer">
+        <div class="footer-container">
+            <p>© 2026 Nahyeon STUDIO. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="app.js"></script>
