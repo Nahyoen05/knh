@@ -82,20 +82,20 @@ body {
 }
 
 /* ==========================================================================
-   🛠️ 히어로 디자인 섹션 (이미지 없는 와이드 스타일 전면 개편)
+   히어로 디자인 섹션 (중앙 와이드 정렬 강제 고정)
    ========================================================================== */
 .hero-section {
     background-color: #fff;
     border-bottom: 1px solid var(--border-soft);
-    padding: 120px 0 100px 0; /* 상하 여백을 줘서 고급스러운 여백 미 확보 */
-    text-align: center; /* 모든 텍스트를 중앙 정렬하여 이미지 빈자리 채움 */
+    padding: 120px 0 100px 0 !important; /* 위아래 넉넉하게 여백 배치 */
+    text-align: center !important; /* 무조건 모든 요소를 가운데로 정렬 */
 }
 
 .full-width-hero {
-    max-width: 800px; /* 텍스트 폭을 좁혀 시선이 집중되도록 설계 */
-    margin: 0 auto;
+    max-width: 850px !important; /* 텍스트 시선 분산을 막는 최적의 너비 */
+    margin: 0 auto !important;
     padding: 0 24px;
-    display: block !important; /* 바둑판 격자를 없애고 1단 배열로 고정 */
+    display: block !important; /* 기존의 2단 그리드 박스를 완전히 파괴 */
 }
 
 .hero-tag {
@@ -108,7 +108,7 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 3.2rem; /* 텍스트 전면 강조를 위해 폰트 크기 업그레이드 */
+    font-size: 3.2rem !important; /* 대형 폰트로 시선 압도 */
     font-weight: 800;
     line-height: 1.25;
     color: var(--text-dark);
@@ -122,7 +122,7 @@ body {
     color: var(--text-muted);
     line-height: 1.7;
     max-width: 600px;
-    margin: 0 auto 40px auto; /* 중앙 배치 정렬 */
+    margin: 0 auto 40px auto !important; /* 가운데 정렬 마진 보정 */
     outline: none;
     word-break: keep-all;
 }
