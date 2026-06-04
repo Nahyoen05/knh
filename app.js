@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 1. 내가 등록한 고정 포트폴리오 리스트 마스터 데이터 (영구 박제)
+    // 1. 요청하신 새로운 썸네일 주소로 완벽 업데이트된 고정 마스터 데이터
     const portfolioData = [
         // ======= [카테고리 1] AI 영상 프로젝트 =======
         {
@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "이건 무조건 저장해야됨🔥포항 덮밥 맛집",
             type: "youtube",
             url: "https://www.youtube.com/shorts/M84Y7XZRWl0",
+            // 새 썸네일 링크 적용 완료
             thumb: "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20191022_19%2F1571724564753N1nab_JPEG%2F73nbxauD5MvBmTZfe9bhUNVH.jpeg.jpg", 
             baseViews: 1750
         },
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "드라마 촬영지 실화냐🔥포항 핫플 카페",
             type: "youtube",
             url: "https://youtube.com/shorts/aal8nttxdS0?si=asRKJDr-lRUowmW2",
+            // 새 썸네일 링크 적용 완료
             thumb: "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231019_33%2F16976815039450bWqG_JPEG%2FKakaoTalk_20231019_110617488.jpg", 
             baseViews: 342
         },
@@ -36,15 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "포항 러블랑 굿즈 기획서",
             type: "document",
             url: "https://docs.google.com/document/d/1DL1HlW91dxQx8y8mfFGZ9nMadtaP8nAenyTAjoaB9UQ/edit?tab=t.0",
+            // 새 썸네일 링크 적용 완료
             thumb: "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20251120_77%2F1763628521141saIN6_JPEG%2FKakaoTalk_20251120_174750399.jpg",
             baseViews: null
         }
     ];
 
-    // 2. 인라인 상단 프로필 데이터 세팅 연동 (오류 완벽 방지 우회 로직 추가)
+    // 2. 캐시 충돌을 완전히 피하기 위해 새로운 final_v2 키 적용
     setupEditableElements();
 
-    // 3. 고정 포트폴리오 리스트 화면에 뿌리기
+    // 3. 포트폴리오 리스트 화면 렌더링 시작
     renderPortfolioList(portfolioData);
 
 
@@ -103,15 +106,15 @@ document.addEventListener("DOMContentLoaded", () => {
         
         editableIds.forEach(id => {
             const el = document.getElementById(id);
-            if (!el) return; // 요소가 존재하지 않으면 그냥 에러 없이 건너뛰도록 방어 코딩 처리
+            if (!el) return;
             
-            const savedData = localStorage.getItem("editable_final_" + id);
+            const savedData = localStorage.getItem("editable_final_v2_" + id);
             if (savedData && savedData.trim() !== "") {
                 el.innerHTML = savedData;
             }
 
             el.addEventListener("blur", () => {
-                localStorage.setItem("editable_final_" + id, el.innerHTML);
+                localStorage.setItem("editable_final_v2_" + id, el.innerHTML);
             });
         });
     }
