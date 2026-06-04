@@ -368,11 +368,11 @@ body {
     transform: translateY(-2px);
 }
 
+/* 푸터 영역 미드나잇 딥그린 무드로 동기화 */
 .studio-footer {
-    border-top: 1px solid var(--border-soft);
-    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+    padding: 40px 0 !important;
     text-align: center;
     font-size: 0.8rem;
-    color: var(--text-muted);
-    background-color: #fff;
+    background-color: #0b1a12 !important; /* 👈 엉뚱한 흰색을 빼고 미드나잇 그린으로 완전 전환 */
 }

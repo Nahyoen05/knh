@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "youtube",
             url: "https://www.youtube.com/shorts/M84Y7XZRWl0",
             thumb: "thumb_food.jpg", // 👈 이 구절 끝에 쉼표(,)가 누락되어 9번째 줄 근처에서 에러가 났던 것입니다.
-            baseViews: 1750
+            baseViews: null
         },
         {
             id: "video_2",
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "youtube",
             url: "https://youtube.com/shorts/aal8nttxdS0?si=asRKJDr-lRUowmW2",
             thumb: "thumb_cafe.jpg", 
-            baseViews: 342
+            baseViews: null
         },
         
         // ======= [카테고리 2] AI 웹사이트 프로젝트 =======
