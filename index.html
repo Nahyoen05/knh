@@ -3,115 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nahyeon STUDIO | Portfolio</title>
+    <title>디지털 크리에이터 포트폴리오</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Nahyeon STUDIO</div>
-            <div class="nav-menu">
-                <span class="active">HOME</span>
-                <span>ABOUT</span>
-                <span>WORKS</span>
-                <span>SERVICES</span>
-                <span>CONTACT</span>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero-section">
-        <div class="hero-container">
-            <div class="hero-text">
-                <span class="hero-tag">HELLO, I'M Nahyeon</span>
-                <h1 id="edit-title" contenteditable="false">DESIGNING EXPERIENCES,<br>DELIVERING VALUE.</h1>
-                <p id="edit-subtitle" class="hero-desc" contenteditable="false">사용자 중심의 사고로 브랜드와 사람을 연결하고, 가치 있는 경험을 디자인합니다.</p>
-                <div class="hero-buttons">
-                    <a href="#featured-works" class="btn-dark">VIEW MY WORKS <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800" alt="Hero Art" class="hero-img">
-                <div class="info-badges">
-                    <div class="badge-item">
-                        <i class="fa-solid fa-user"></i>
-                        <h4>USER CENTERED</h4>
-                        <p>사용자의 니즈를 이해하고 최적의 경험을 설계합니다.</p>
-                    </div>
-                    <div class="badge-item">
-                        <i class="fa-solid fa-layer-group"></i>
-                        <h4>BRAND FOCUSED</h4>
-                        <p>브랜드의 본질을 담아 일관된 가치를 전달합니다.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">PORTFOLIO</div>
+            <nav class="nav-links">
+                <a href="#edit-title" class="nav-item">HOME</a>
+                <a href="#about-section" class="nav-item">ABOUT</a>
+                <a href="#works-section" class="nav-item">WORKS</a>
+                <a href="#contact-section" class="nav-item">CONTACT</a>
+            </nav>
         </div>
     </header>
 
-    <main class="main-container">
-        
-        <section class="profile-layout-section">
-            <div class="profile-grid-wrapper">
-                <div class="profile-white-block">
-                    <h3 class="block-title"><i class="fa-solid fa-briefcase"></i> SELECTED EXPERIENCE</h3>
-                    <div id="edit-exp" class="editable-area" contenteditable="false">
-                        <p>• <strong>크리에이티브 일러스트레이터 & 프로세서</strong> (Present)</p>
-                        <p>- 브랜드 맞춤형 시각 자료 및 프리미엄 인포그래픽 포스터 디자인 제작</p>
-                        <p>- AI 기술을 융합한 로컬 브랜드 홍보 및 고효율 숏폼 영상 기획/편집 총괄</p>
-                        <p>- 오피셜 브랜드 굿즈 패키지 브랜딩 및 실물 제품 제작 디렉팅</p>
-                    </div>
-                </div>
-                <div class="profile-green-block">
-                    <h3 class="block-title white-text"><i class="fa-solid fa-screwdriver-wrench"></i> ABOUT ME & SKILLS</h3>
-                    <div id="edit-skills" class="editable-area white-text" contenteditable="false">
-                        <p>디자인을 통해 문제를 해결하고, 사람들에게 긍정적인 영향을 만드는 것을 목표로 합니다.</p>
-                        <p style="margin-top:15px;">• <strong>Video & Motion:</strong> Premiere Pro, After Effects, AI Video Workflow</p>
-                        <p>• <strong>Design & Branding:</strong> Illustrator, Photoshop, Package Design</p>
-                    </div>
-                </div>
-            </div>
-            <div class="notion-wrapper">
-                <a href="https://www.notion.so/ee79eb1ddb1f83e0b8c281a0d7611f8c" target="_blank" class="notion-link-btn">
-                    <i class="fa-solid fa-link"></i> 상세 노션 포트폴리오 전체 보기
-                </a>
-            </div>
-        </section>
-
-        <section id="featured-works" class="works-section">
-            <div class="works-header">
-                <h2 class="works-main-title">SELECTED WORKS</h2>
-                <span class="works-sub-title">VIEW ALL +</span>
-            </div>
-
-            <div class="category-group">
-                <h3 class="category-title title-video">🎥 AI Video Projects</h3>
-                <div id="grid-youtube" class="cards-grid-layout">
-                    </div>
-            </div>
-
-            <div class="category-group">
-                <h3 class="category-title title-web">🌐 AI Web & Landing Pages</h3>
-                <div id="grid-web" class="cards-grid-layout">
-                    </div>
-            </div>
-
-            <div class="category-group">
-                <h3 class="category-title title-doc">📄 Documents & Materials</h3>
-                <div id="grid-document" class="cards-grid-layout">
-                    </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="studio-footer">
-        <div class="footer-container">
-            <p>© 2026 Nahyeon STUDIO. All rights reserved.</p>
+    <section class="hero-section">
+        <div class="hero-container">
+            <h1 id="edit-title" contenteditable="false">디지털 크리에이터 포트폴리오</h1>
+            <p id="edit-subtitle" class="subtitle" contenteditable="false">AI 활용 미디어 콘텐츠 및 브랜딩 기획</p>
+            <p id="edit-bio" class="bio" contenteditable="false">데이터와 트렌드를 기반으로 가치를 창출하는 크리에이티브 파트너입니다.</p>
         </div>
-    </footer>
+    </section>
 
-    <script src="app.js"></script>
-</body>
-</html>
+    <section class="resume-section" id="about-section">
+        <div class="resume-container">
+            <div class="resume-block">
+                <h2>EXPERIENCE</h2>
+                <div id="edit-exp" class="editable-area" contenteditable="false">
+                    <p><strong>AI 콘텐츠 디렉터 / 크리에이터</strong> (2024 - 현재)</p>
+                    <ul>
+                        <li>지역 상권 활성화를 위한 AI 기반 숏폼 마케팅 콘텐츠 기획 및 제작</li>
+                        <li>로컬 브랜드 웹사이트 레이아웃 설계 및 랜딩 페이지 비주얼 디렉팅</li>
+                        <li>오프라인 상품 활성화를 위한 캐릭터 굿즈 패키지 및 브랜딩 전략 수립</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="resume-block">
+                <h2>SKILLS & TOOLS</h2>
+                <div id="edit-skills" class="editable-area white-text" contenteditable="false">
+                    <p>• <strong>Video Production:</strong> AI 비디오 생성 기획, 숏폼 트렌드 분석, 영상 썸네일 브랜딩</p>
+                    <p>• <strong>Web & Design:</strong> AI 활용 랜딩페이지 구조 설계, 디지털 이미지 자산 관리</p>
+                    <p>• <strong>Strategy:</strong> 굿즈 마케팅 제안서 작성, 비즈니스 컨셉 모델링, 구글 워크스페이스 기반 기획</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="portfolio-container" id="works-section">
+        
+        <section class="category-block">
+            <h2 class="category-title"><i class="fa-solid fa-clapperboard"></i> AI Video Projects</h2>
+            <div class="projects-grid" id="grid-youtube">
+                </div>
+        </section>
+
+        <section class="category-block">
+            <h2 class="category-title"><i class="fa-solid fa-globe"></i> AI Web & Landing Pages</h2>
+            <div class="projects-grid" id="grid-web">
+                </div>
+        </section>
+
+        <section class="category-block">
+            <h2 class="category-title"><i class="fa-solid fa-file-lines"></i> Documents & Materials</h2>
+            <div class="
