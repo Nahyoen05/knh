@@ -4,7 +4,7 @@
     --bg-sub: #f3f4f3;
     --text-dark: #111411;
     --text-muted: #606660;
-    --studio-green: #1c3b2b; /* 레퍼런스의 메인 시그니처 딥그린 */
+    --studio-green: #1c3b2b;
     --studio-green-hover: #29543e;
     --border-soft: #e2e5e2;
     --card-shadow: 0 4px 20px rgba(0,0,0,0.04);
@@ -33,9 +33,7 @@ body {
     padding: 0 24px;
 }
 
-/* ==========================================================================
-   상단 내비게이션 바 (링크 연동 호환 및 SERVICES 제거 대응)
-   ========================================================================== */
+/* 상단 내비게이션 바 */
 .navbar {
     background-color: #fff;
     border-bottom: 1px solid var(--border-soft);
@@ -64,18 +62,18 @@ body {
     align-items: center;
 }
 
-/* 🛠️ span에서 a 태그로 바뀐 메뉴 링크들을 위한 정밀 정렬 및 스타일 고정 */
 .nav-link-item {
     margin-left: 24px;
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-muted);
     cursor: pointer;
-    text-decoration: none; /* 밑줄 방지 */
+    text-decoration: none; 
     display: inline-block;
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
     transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
 }
 
 .nav-link-item.active, .nav-link-item:hover {
@@ -84,57 +82,49 @@ body {
 }
 
 /* ==========================================================================
-   히어로 디자인 섹션
+   🛠️ 히어로 디자인 섹션 (이미지 없는 와이드 스타일 전면 개편)
    ========================================================================== */
 .hero-section {
     background-color: #fff;
     border-bottom: 1px solid var(--border-soft);
-    padding: 80px 0 50px 0;
-    position: relative;
+    padding: 120px 0 100px 0; /* 상하 여백을 줘서 고급스러운 여백 미 확보 */
+    text-align: center; /* 모든 텍스트를 중앙 정렬하여 이미지 빈자리 채움 */
 }
 
-.hero-container {
-    max-width: 1200px;
+.full-width-hero {
+    max-width: 800px; /* 텍스트 폭을 좁혀 시선이 집중되도록 설계 */
     margin: 0 auto;
     padding: 0 24px;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
+    display: block !important; /* 바둑판 격자를 없애고 1단 배열로 고정 */
 }
 
 .hero-tag {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 700;
-    color: var(--text-muted);
-    letter-spacing: 0.1em;
+    color: var(--studio-green);
+    letter-spacing: 0.15em;
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .hero-text h1 {
-    font-size: 2.8rem;
+    font-size: 3.2rem; /* 텍스트 전면 강조를 위해 폰트 크기 업그레이드 */
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.25;
     color: var(--text-dark);
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     outline: none;
+    word-break: keep-all;
 }
 
 .hero-desc {
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: var(--text-muted);
-    line-height: 1.6;
-    max-width: 480px;
-    margin-bottom: 30px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto 40px auto; /* 중앙 배치 정렬 */
     outline: none;
+    word-break: keep-all;
 }
 
 .btn-dark {
@@ -142,49 +132,24 @@ body {
     background-color: var(--studio-green);
     color: #fff;
     text-decoration: none;
-    padding: 14px 28px;
-    font-size: 0.85rem;
+    padding: 15px 36px;
+    font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.05em;
-    border-radius: 2px;
-    transition: background-color 0.2s;
-}
-
-.btn-dark:hover { background-color: var(--studio-green-hover); }
-
-.hero-visual {
-    position: relative;
-}
-
-.hero-img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
     border-radius: 4px;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
-.info-badges {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-top: 20px;
+.btn-dark:hover { 
+    background-color: var(--studio-green-hover);
+    transform: translateY(-2px);
 }
-
-.badge-item {
-    background: var(--bg-sub);
-    padding: 20px;
-    border-radius: 4px;
-}
-
-.badge-item i { color: var(--studio-green); margin-bottom: 10px; font-size: 1.1rem; }
-.badge-item h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; }
-.badge-item p { font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; }
 
 /* ==========================================================================
    프로필 블록 비대칭 레이아웃 (ABOUT)
    ========================================================================== */
 .profile-layout-section {
-    padding: 80px 0 30px 0; /* 스크롤 안착 여백 보정 */
+    padding: 80px 0 30px 0;
 }
 
 .profile-grid-wrapper {
@@ -231,14 +196,6 @@ body {
 
 .editable-area p { margin-bottom: 10px; }
 
-.profile-sns-links {
-    margin-top: 30px;
-    display: flex;
-    gap: 15px;
-    font-size: 1.1rem;
-    color: rgba(255,255,255,0.6);
-}
-
 .notion-wrapper { text-align: right; margin-top: 20px; }
 .notion-link-btn {
     display: inline-block;
@@ -255,7 +212,7 @@ body {
 /* ==========================================================================
    작품 목록 스튜디오 격자 스타일 (WORKS)
    ========================================================================== */
-.works-section { padding: 60px 0 40px 0; } /* 스크롤 안착 여백 보정 */
+.works-section { padding: 60px 0 40px 0; }
 .works-header {
     border-bottom: 2px solid var(--text-dark);
     padding-bottom: 12px;
@@ -283,7 +240,6 @@ body {
     gap: 30px;
 }
 
-/* 카드 인포그래픽 디자인 적용 */
 .project-card {
     background-color: #fff;
     border: 1px solid var(--border-soft);
@@ -341,25 +297,11 @@ body {
     margin-bottom: 16px;
 }
 
-.live-stats {
-    margin-top: auto;
-    padding-top: 14px;
-    border-top: 1px solid var(--bg-sub);
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    display: flex;
-    gap: 12px;
-}
-.live-stats i { color: var(--studio-green); }
-.live-stats strong { color: var(--text-dark); }
-
-/* 💡 더 이상 사용하지 않는 지저분한 삭제 버튼 및 관리자 입력 폼 CSS는 깔끔하게 정리했습니다. */
-
 /* ==========================================================================
-   맨 하단 CONTACT 전용 미드나잇 그린 카드 섹션 스타일 (신설)
+   맨 하단 CONTACT 및 푸터 스타일
    ========================================================================== */
 .contact-section {
-    scroll-margin-top: 70px; /* 클릭 이동 시 딱 맞게 안착 */
+    scroll-margin-top: 70px;
 }
 
 .contact-section a:hover {
@@ -368,11 +310,11 @@ body {
     transform: translateY(-2px);
 }
 
-/* 푸터 영역 미드나잇 딥그린 무드로 동기화 */
 .studio-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
-    padding: 40px 0 !important;
+    border-top: 1px solid var(--border-soft);
+    padding: 40px 0;
     text-align: center;
     font-size: 0.8rem;
-    background-color: #0b1a12 !important; /* 👈 엉뚱한 흰색을 빼고 미드나잇 그린으로 완전 전환 */
+    color: var(--text-muted);
+    background-color: #fff;
 }
