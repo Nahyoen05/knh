@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "youtube",
             url: "https://www.youtube.com/shorts/M84Y7XZRWl0",
             thumb: "thumb_food.jpg", // 로컬 파일로 변경
-            baseViews: 1750
+            baseViews: null
         },
         {
             id: "video_2",
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "youtube",
             url: "https://youtube.com/shorts/aal8nttxdS0?si=asRKJDr-lRUowmW2",
             thumb: "thumb_cafe.jpg", // 로컬 파일로 변경
-            baseViews: 342
+            baseViews: null
         },
         
         // ======= [카테고리 2] AI 웹사이트 프로젝트 =======
