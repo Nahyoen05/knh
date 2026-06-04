@@ -4,24 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>디지털 크리에이터 포트폴리오</title>
+    <!-- 구글 폰트 및 아이콘 에셋 로드 -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo">PORTFOLIO</div>
-            <nav class="nav-links">
-                <a href="#edit-title" class="nav-item">HOME</a>
-                <a href="#about-section" class="nav-item">ABOUT</a>
-                <a href="#works-section" class="nav-item">WORKS</a>
-                <a href="#contact-section" class="nav-item">CONTACT</a>
-            </nav>
-        </div>
-    </header>
+    <!-- 💡 문제가 되던 상단 메뉴 헤더 바(<header>) 구역을 완벽히 도려냈습니다 -->
 
+    <!-- 프로필 메인 배너 영역 (방문자 읽기 전용 상태 고정) -->
     <section class="hero-section">
         <div class="hero-container">
             <h1 id="edit-title" contenteditable="false">디지털 크리에이터 포트폴리오</h1>
@@ -30,7 +22,8 @@
         </div>
     </section>
 
-    <section class="resume-section" id="about-section">
+    <!-- ABOUT 구역 (경력 및 스킬 서술) -->
+    <section class="resume-section">
         <div class="resume-container">
             <div class="resume-block">
                 <h2>EXPERIENCE</h2>
@@ -55,20 +48,54 @@
         </div>
     </section>
 
-    <main class="portfolio-container" id="works-section">
+    <!-- WORKS 구역 (포트폴리오 카드 갤러리 그리드) -->
+    <main class="portfolio-container">
         
+        <!-- 카테고리 1: AI 영상 프로젝트 -->
         <section class="category-block">
             <h2 class="category-title"><i class="fa-solid fa-clapperboard"></i> AI Video Projects</h2>
             <div class="projects-grid" id="grid-youtube">
-                </div>
+                <!-- app.js의 고정 데이터 카드가 생성되는 곳 -->
+            </div>
         </section>
 
+        <!-- 카테고리 2: AI 웹사이트 프로젝트 -->
         <section class="category-block">
             <h2 class="category-title"><i class="fa-solid fa-globe"></i> AI Web & Landing Pages</h2>
             <div class="projects-grid" id="grid-web">
-                </div>
+                <!-- app.js의 고정 데이터 카드가 생성되는 곳 -->
+            </div>
         </section>
 
+        <!-- 카테고리 3: 기획서 및 자료 문서 -->
         <section class="category-block">
             <h2 class="category-title"><i class="fa-solid fa-file-lines"></i> Documents & Materials</h2>
-            <div class="
+            <div class="projects-grid" id="grid-document">
+                <!-- app.js의 고정 데이터 카드가 생성되는 곳 -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 맨 하단 CONTACT 구역 (이메일 주소 포함) -->
+    <section class="contact-section" style="padding: 80px 20px; text-align: center; background-color: #11261a; color: #ffffff; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div style="max-width: 600px; margin: 0 auto;">
+            <span style="font-size: 11px; letter-spacing: 2px; color: #81a38a; font-weight: 600; text-transform: uppercase; display: block; margin-bottom: 5px;">Get In Touch</span>
+            <h2 style="font-size: 32px; margin-top: 0; margin-bottom: 20px; font-weight: 700; letter-spacing: 1px;">CONTACT</h2>
+            <p style="color: #c3d6cb; margin-bottom: 35px; font-size: 15px; line-height: 1.7; word-break: keep-all;">
+                비즈니스 협업 제안 및 프로젝트 관련 문의는<br>
+                아래 공식 이메일 주소로 편하게 연락 주시기 바랍니다.
+            </p>
+            <a href="mailto:matchya030@naver.com" style="font-size: 20px; color: #ffffff; font-weight: 600; text-decoration: none; border-bottom: 2px solid #81a38a; padding-bottom: 6px; transition: all 0.3s; display: inline-block;">
+                <i class="fa-regular fa-envelope" style="margin-right: 10px; color: #81a38a;"></i> matchya030@naver.com
+            </a>
+        </div>
+    </section>
+
+    <footer style="padding: 30px 20px; text-align: center; background-color: #0b1a12; color: #5c7565; font-size: 13px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p>&copy; 2026 Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
